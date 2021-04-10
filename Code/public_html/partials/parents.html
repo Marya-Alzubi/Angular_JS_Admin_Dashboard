@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assests/css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <body>
+        <h3 class="title">Parents </h3>
+        <table id="table">
+            <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>PhoneNumber</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+            <tr data-ng-repeat="parent in parents">
+                <td>{{parent.id}}</td>
+                <td>{{parent.fname}}</td>
+                <td>{{parent.lname}}</td>
+                <td>{{parent.phone}}</td>
+                <td>{{parent.address}}</td>
+                <td><button class="btn delete-btn"><i class="fa fa-trash"> Delete </i></button></td>
+            </tr>
+        </table>
+        <button class="btn add-btn" style="margin-bottom: 2rem" ng-click="toggle()"><i class="fa fa-plus"> Add </i></button>
+        <div class="row" ng-show="myVar">
+            <fieldset class="fieldset" >
+                <form data-ng-submit="addParent()">
+                    <div class='col-md-10' > 
+                        <h4 class="legand-name">Add Parent </h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputfname">First name</label>
+                                <input type="text" class="form-control" id="inputfname" placeholder="first name" data-ng-model="newParent.fname" >
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputlname">Last name</label>
+                                <input type="text" class="form-control"  placeholder="last name" data-ng-model="newParent.lname">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputphone">Phone Number</label>
+                                <input type="tel" class="form-control" id="inputphone" placeholder="077 777 7777" data-ng-model="newParent.phone">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputaddress">Address</label>
+                                <input type="text" class="form-control" id="inputaddress" placeholder="address" data-ng-model="newParent.address">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class='col-md-2  mx-3 ' > 
+                        <div class="row" >
+                            <div class="col-md-12" >
+                                <i class=" fas fa-users fa-8x form-icon"></i>
+                            </div>
+                            <div class="col-md-12" >
+                                <button class="btn form-btn save-btn" data-ng-click="toggle()" ><i class="fa fa-plus"> Add </i></button>
+                                <button type="reset" class="btn form-btn" ng-click="toggle()"><i class="fa fa-plus"> Cancel </i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

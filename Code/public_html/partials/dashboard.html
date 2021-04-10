@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assests/css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h3 class="title">Dashboard </h3>
+        <div class='flex-class'>
+            <div class="card" >
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item text-center upper"><i class="fas fa-id-card fa-2x icon-color "></i></li>
+                    <li class="list-group-item lower"><span class="card-name">Full name: </span><span class="card-content">{{fname }} {{lname}}</span></li>
+                </ul>
+            </div>
+            <div class="card" >
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item upper text-center"><i class="fas fa-envelope-open-text fa-2x icon-color"></i></li>
+                    <li class="list-group-item lower"><span class="card-name">Email: </span><span class="card-content">{{email}}</span></li>
+                </ul>
+            </div>
+            <div class="card" >
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item upper text-center"><i class="fas fa-phone fa-2x icon-color"></i></li>
+                    <li class="list-group-item lower"><span class="card-name">Phone number: </span><span class="card-content">{{phone}}</span></li>
+                </ul>
+            </div>
+            <div class="card" >
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item upper text-center"><i class="fas fa-house-user fa-2x icon-color"></i></li>
+                    <li class="list-group-item lower"><span class="card-name">Address: </span><span class="card-content">{{address}}</span></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

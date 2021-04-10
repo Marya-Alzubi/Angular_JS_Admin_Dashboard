@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assests/css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body ng-app="app">
+        <main>
+               <nav class="navbar border-0">
+                    <ul class="ul-nav">
+                        <li>
+                            <a ui-sref="dashboard" ui-sref-active="active" ng-click="changeColor()" class={{test}} >
+                                <div class="icon">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i> 
+                                </div>
+                                <div class="name" data-text="Dashboard">
+                                    Dashboard
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="parents" ui-sref-active="active" >
+                                <div class="icon">
+                                    <i class="nav-icon fas fa-users"></i> 
+                                </div>
+                                <div class="name" data-text="Parents">
+                                    Parents
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="teachers" ui-sref-active="active">
+                                <div class="icon">
+                                    <i class="nav-icon fas fa-chalkboard-teacher"></i> 
+                                </div>
+                                <div class="name" data-text="Trachers">
+                                    Teachers
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="students" ui-sref-active="active">
+                                <div class="icon">
+                                    <i class="nav-icon fas fa-user-graduate"></i>
+                                </div>
+                                <div class="name" data-text="Students">
+                                    Students
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="admins" ui-sref-active="active" >
+                                <div class="icon">
+                                    <i class="nav-icon fas fa-user-cog"></i>
+                                </div>
+                                <div class="name" data-text="Admins">
+                                    Admins
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="nav-icon fas fa-sign-out-alt"></i>
+                                </div>
+                                <div class="name" data-text="Logout">
+                                    Logout
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            <div class="container-fluid">
+                <div ui-view></div>
+            </div>
+        </main>
+        <footer class="bg-light text-center text-lg-start " >
+            <div class="text-center top-footer" >
+                <a href="#" class="contact-footer">  About Us </a>  |  <a ui-sref="contact" ui-sref-active="active" class="contact-footer" >  Contact us </a>
+            </div>
+            <div class="text-center bottom-footer" >
+                Copyright © 2016 Blulogix, LLC. All Right Reserved. 
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script src="assests/js/app.js"></script>
+    </body>
+</html>

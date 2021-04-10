@@ -1,0 +1,271 @@
+/*start the overall pages css*/
+*{ 
+    margin: 0;
+    padding:0; 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom:90px;
+}
+/*end the overall pages css*/
+
+/*start of navbar styling*/
+.navbar {
+    border: 0 !important;
+}
+.ul-nav {
+    position: fixed;
+    margin: 0 ;
+    padding: 10px 0 ;
+    background-color: #198B7F ;
+    display: flex ;
+    width: 100%;
+}
+.ul-nav li {
+    list-style: none;
+    text-align: center;
+    display: block ;
+}
+.ul-nav li a {
+    text-decoration: none ;
+    padding: 0 40px ;
+    display: block ;
+    color: white;
+}
+.ul-nav li:last-child {
+    position: absolute;
+    top: 12%;
+    left: 90%;
+    transform: translate(10%, -1%);
+}
+.ul-nav li a .icon {
+    text-align: center ;
+    overflow: hidden ;
+    margin: 0 auto ;
+}
+.icon-main-nav {
+    font-size: 30px;
+    left: 50%;
+    position: absolute;
+    top: 20px;
+    margin-left: -10px;
+}
+.navbar-nav>li>a {
+    padding: 30px 20px ;
+}
+.nav-icon {
+    padding: 10px ;
+    border-radius: 50% ;
+    background-color: #32A599 ;
+}
+/*end of navbar styling*/
+
+/*start of footer styling*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #198B7F ;
+    color: white ;
+}
+.top-footer {
+    padding: 8px 0 5px 0;
+}
+.bottom-footer {
+    padding: 0 0 8px 0;
+}
+.contact-footer{
+    color: white;
+    text-decoration: none;
+    cursor: pointer ;
+}
+.contact-footer:hover{
+    color: tomato;
+    text-decoration: none;
+    cursor: pointer ;
+}
+/*end of footer styling*/
+
+/*start of dashboard page styling*/
+
+h3 {
+    color: #198B7F ;
+    border-left : 3px solid red;
+    font-weight: bold;
+    padding: 5px ;
+}
+.flex-class {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.upper {
+    border-top :  3px solid red;
+    border-right: 3px solid #ececec ;
+    border-left:  3px solid #ececec ;
+}
+.lower {
+    border-right: 3px solid #ececec ;
+    border-left:  3px solid #ececec ;
+    border-bottom: 3px solid #ececec ;
+}
+.card{
+    width: 40rem;
+    margin-right: 15px ;
+}
+.fa-envelope-open-text {
+
+    margin: 0 auto ;
+
+}
+.card-name {
+    color: #198B7F ;
+}
+.icon-color {
+    color: #198B7F ;
+}
+/*end of dashboard page styling*/
+
+/*start of [parents & teachers & students & admins] pages styling*/
+.title {
+    color: #198B7F ;
+    border-left : 3px solid red;
+    font-weight: bold;
+    padding: 5px ;
+}
+#table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 3px solid #7CB7AF;
+    padding: 8px;
+    color: #198B7F;
+}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    text-align: center;
+    background-color: #CADEDF;
+}
+tr > td:last-of-type {
+    text-align: center;
+}
+.delete-btn {
+    background-color: #198B7F;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: white; 
+    border: 2px solid #198B7F;
+    color: #198B7F;
+}
+.add-btn{
+    margin: 2rem 0 2rem 0;  
+    background-color: tomato;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.add-btn:hover {
+    background-color: white; 
+    border: 2px solid tomato;
+    color: tomato;
+}
+label {
+    color: #198B7F ;
+}
+.form-btn {
+    padding: 12px 25px;
+    margin-top: 3rem;
+    background-color: tomato;
+    border: none;
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+.form-icon {
+    color: #198B7F ;
+    float: right;
+}
+.save-btn {
+    margin-left: 1rem ;   
+}
+.legand-name {
+    color: #198B7F;
+    width: 112px; 
+    text-align: left;
+    margin-left: 15px;
+    margin-top:-19px;
+    padding: 0 5px;
+    background-color: white;
+}
+.fieldset {
+    border: 3px solid #F5F5F5 ;
+    margin: 0 15px;
+    padding: 10px 0;
+}
+/*end of [parents & teachers & students & admins] pages styling*/
+
+/*start styling contact us page*/ 
+.contact-buttons,
+.contact-buttons li {
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-buttons {
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.contact-buttons li {
+    flex-basis: 25%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.contact-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5em 1em;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-buttons .fas {
+    color: tomato ;
+}
+.contact-buttons span { 
+    color: #198B7F ;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px ;
+    height: 50px;
+    border: 2px solid #198B7F  ; 
+    margin-right: 15px;
+    margin-bottom: 27px;
+
+}
+.contact-form-button {
+    background-color: tomato ;
+    color: white ;
+}
+/*end styling contact us page*/ 
